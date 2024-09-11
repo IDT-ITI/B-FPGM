@@ -1,0 +1,14 @@
+__pycache__/
+.idea/
+WIDER/
+*.pt
+*.pth
+*/__pycache__/
+*.pyc
+EResFD-main/eval_tools/a/
+EResFD-main/results/
+EResFD-main/logs/
+EResFD-main/img/
+EResFD-main/tmp/
+EResFD-main/eval_tools/c/
+*wandb/
