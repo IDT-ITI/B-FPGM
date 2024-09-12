@@ -2,7 +2,6 @@ __pycache__/
 .idea/
 WIDER/
 *.pt
-*.pth
 */__pycache__/
 *.pyc
 EResFD-main/eval_tools/a/
