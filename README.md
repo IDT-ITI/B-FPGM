@@ -25,7 +25,7 @@ The models are trained and evaluated using the WIDER FACE dataset. To use this d
 
 ## Dependencies
 
-A requirements.txt file is provided with all the necessary python dependencies. Additionally, the code was developed using Python 3.11.7, CUDA 11.4 and Ubuntu 20.04.06 LTS.
+A requirements.txt file is provided with all the necessary python dependencies. Additionally, the code was developed using Python 3.11.9, CUDA 11.4 and Ubuntu 20.04.06 LTS.
 
 To ensure compatibility and proper functionality of the pruning scripts, please install the specific versions of the python packages listed in the requirements.txt file, using the following command:
 
