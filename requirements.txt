@@ -136,7 +136,9 @@ typeguard==4.0.0
 types-PyYAML==6.0.12.10
 typing_extensions==4.5.0
 tzdata==2023.3
+ujson==5.9.0
 urllib3==1.26.18
+wandb==0.17.2
 wcwidth==0.2.13
 websockets==11.0.3
 Werkzeug==2.3.6
