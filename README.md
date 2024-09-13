@@ -9,7 +9,7 @@ Our methodology divides the network into 6 layer groups optimizes the pruning pr
 The repository is organized into 4 folders:
 
 - `EResFD-main/`: Contains code and resources for the pre-training and pruniong of the EResFD model.
-- `Pruned_Models/`: A collection of pre-pruned model weights (`.pth` files). The pruned models with target pruning rates equal to 10%, 20%, 30%, 40%, 50% and 60% are included, in addition to the original pre-trained and unpruned EResFD model.
+- `Pruned_Models/`: A collection of pruned models (`.pth` files). The pruned models with target pruning rates equal to 10%, 20%, 30%, 40%, 50% and 60% are included, in addition to the original pre-trained and unpruned EResFD model.
 - `torchscript/`: All the required files for android deployment of the EResFD model (and its pruned versions) using the torchscript framework.
 
 ## Prerequisites
