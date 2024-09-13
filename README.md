@@ -21,7 +21,7 @@ Before running the pruning scripts, the user needs to prepare the necessary data
 The models are trained and evaluated using the WIDER FACE dataset. To use this dataset:
 
 1. Download the WIDER FACE dataset from [here](https://shuoyang1213.me/WIDERFACE/).
-2. Extract and place the `WIDER` folder in the same directory as the `EXTD` and `EResFD` folders.
+2. Extract and place the `WIDER` folder in the same directory as the `EResFD`, `Pruned models` and `torchscript` folders.
 
 ## Dependencies
 
