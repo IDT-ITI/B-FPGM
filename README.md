@@ -50,7 +50,7 @@ Each of these steps is implemented in a separate Python script, which can be exe
 3. `main_sfp.py`
 4. `main_finetune.py`
 
-, while the evaluation is performed using the script `main_evaluation.py`.
+, while the evaluation on the WIDER FACE validation set can be performed by using the script `main_evaluation.py`.
 
 ## Android Deployment
 
