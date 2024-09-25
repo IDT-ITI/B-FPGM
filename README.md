@@ -52,6 +52,22 @@ Each of these steps is implemented in a separate Python script, which can be exe
 
 , while the evaluation on the WIDER FACE validation set can be performed by using the script `main_evaluation.py`.
 
+Some of the most important hyperparameters and their default values are presented in the table below:
+
+# Hyperparameter Table
+
+
+| Hyperparameter Name  | Description                                                                              | Default Value |
+|----------------------|------------------------------------------------------------------------------------------|---------------|
+| `n_epochs_pretraining` | The number of epochs used during the pretraining phase of the model.           | `300`         |
+| `n_epochs_sfp`         | The number of epochs allocated for the Soft Filter Pruning (SFP) process.        | `200`         |
+| `n_epochs_finetune`    | The number of epochs dedicated to the fine-tuning stage of the model.          | `10`          |
+| `target_pruning_rate`  | Sets the target pruning rate for Bayesian optimization.             | `0.2`         |
+| `n_opt_iterations`     | The total number of iterations for Bayesian optimization, after the initial random sampling. | `940`         |
+| `n_init_points`        | The number of initial points sampled by the Bayesian optimization. | `60`         |
+
+
+
 ## Android Deployment
 
 Simply move the convert_to_torchscript.py script inside the EResFD-main/ directory and run it. Make sure to change the path within the script to convert the desired model to torchscript form.
@@ -68,6 +84,8 @@ Redistributions of source code must retain the above copyright notice, this list
 This software is provided by the authors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the authors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
 
 ## Citation
-If you find our pruning method or pruned models useful in your work, please cite the following publication where this approach was proposed:
+[comment]: <If you find our pruning method or pruned models useful in your work, please cite the following publication where this approach was proposed:>
+This work was submitted to inter Conference on Applications of Computer Vision Workshops (WACVW 2025) as:
 
-TODO
+N. Kaparinos, V. Mezaris, "B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM
+Pruning", Submitted to Proc. IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW 2025), Waikoloa, Hawaii, USA, 2025.
