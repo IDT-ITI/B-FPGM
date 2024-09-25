@@ -62,7 +62,7 @@ Some of the most important hyperparameters and their default values are presente
 | `n_epochs_pretraining` | The number of epochs used during the pretraining phase of the model.           | `300`         |
 | `n_epochs_sfp`         | The number of epochs used for the Soft Filter Pruning (SFP) process.        | `200`         |
 | `n_epochs_finetune`    | The number of epochs used for the fine-tuning stage of the model.          | `10`          |
-| `target_pruning_rate`  | Sets the target pruning rate for Bayesian optimization.             | `0.2`         |
+| `target_pruning_rate`  | The target pruning rate for Bayesian optimization.             | `0.2`         |
 | `n_opt_iterations`     | The total number of iterations for Bayesian optimization, after the initial random sampling. | `940`         |
 | `n_init_points`        | The number of initial points sampled by the Bayesian optimization. | `60`         |
 
