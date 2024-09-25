@@ -85,7 +85,7 @@ This software is provided by the authors "as is" and any express or implied warr
 
 ## Citation
 [comment]: <If you find our pruning method or pruned models useful in your work, please cite the following publication where this approach was proposed:>
-This work was submitted to inter Conference on Applications of Computer Vision Workshops (WACVW 2025) as:
+This work was submitted and is under review:
 
 N. Kaparinos, V. Mezaris, "B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM
-Pruning", Submitted to Proc. IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW 2025), Waikoloa, Hawaii, USA, 2025.
+Pruning", under review.
