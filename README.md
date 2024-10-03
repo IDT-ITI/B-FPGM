@@ -67,6 +67,22 @@ Some of the most important hyperparameters and their default values are presente
 | `n_init_points`        | The number of initial points sampled by the Bayesian optimization. | `60`         |
 
 
+# Pruned models
+In the `Pruned_Models/`, we provide pruned models with target pruning rates of 10%, 20%, 30%, 40%, 50%, and 60%, along with the original pre-trained and unpruned EResFD model. In the following table, for each model,  we present the pruning rates for each group:
+
+
+| Model          | Group 1 Pruning Rate  | Group 2 Pruning Rate  | Group 3 Pruning Rate  | Group 4 Pruning Rate | Group 5 Pruning Rate  | Group 6 Pruning Rate | Sparsity  |
+|----------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------|
+| Original       | 0%                       | 0%                       | 0%                       | 0%                       | 0%                       | 0%                       | 0            |
+| Pruned 10%     | 20%                      | 0%                       | 7.9%                     | 20%                      | 20%                      | 17.2%                    | 11.94%        |
+| Pruned 20%     | 0%                       | 0%                       | 0%                       | 40%                      | 40%                      | 39.8%                    | 21.76%        |
+| Pruned 30%     | 21.3%                    | 4.5%                     | 30.5%                    | 47.1%                    | 32.1%                    | 44.8%                    | 31.08%        |
+| Pruned 40%     | 0.8%                     | 5.2%                     | 47.2%                    | 60%                      | 24.4%                    | 46.4%                    | 39.97%        |
+| Pruned 50%     | 0%                       | 0%                       | 38.3%                    | 70%                      | 56.1%                    | 70%                      | 48.88%        |
+| Pruned 60%     | 8.2%                     | 0%                       | 80%                      | 80%                      | 80%                      | 16.4%                    | 59.32%        |
+
+
+
 
 ## Android Deployment
 
