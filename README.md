@@ -68,7 +68,7 @@ Some of the most important hyperparameters and their default values are presente
 
 
 # Pruned models
-In the `Pruned_Models/`, we provide pruned models with target pruning rates of 10%, 20%, 30%, 40%, 50%, and 60%, along with the original pre-trained and unpruned EResFD model. In the following table, for each model,  we present the pruning rates for each group:
+In the `Pruned_Models/` folder, we provide pruned models with target pruning rates of 10%, 20%, 30%, 40%, 50%, and 60%, along with the original pre-trained and unpruned EResFD model. In the following table, for each model,  we present the pruning rates for each group:
 
 
 | Model          | Group 1 Pruning Rate  | Group 2 Pruning Rate  | Group 3 Pruning Rate  | Group 4 Pruning Rate | Group 5 Pruning Rate  | Group 6 Pruning Rate | Sparsity  |
