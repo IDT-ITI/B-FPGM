@@ -2,7 +2,7 @@
 
 Bayesian optimised pruning of the lightweight face detector **EResFD**, currently the face detector with the lowest number of parameters in the literature.
 
-Our methodology divides the network into 6 layer groups optimizes the pruning pruning rate of each group using **Bayesian optimization**. Subsequently, the optimal pruning rate are using in combination with the **Soft Filter Pruning (SFP)** approach and **FPGM pruning**.
+Our methodology divides the network into 6 layer groups optimizes the pruning pruning rate of each group using **Bayesian optimization**. Subsequently, the optimal pruning rate are used in combination with the **Soft Filter Pruning (SFP)** approach and **FPGM pruning**.
 
 <p align="center"><img src="https://github.com/IDT-ITI/B-FPGM/blob/main/Figures/overview.png" alt="drawing" width="1000"/></p>
 Overview of our proposed pruning and training pipeline. The diagram on the left illustrates our complete methodology, while the diagram on the right elaborates on the iterative Bayesian optimization process (i.e. the 2nd step of the overall pipeline shown the left). The snowflake symbol indicates that the network's structure remains unchanged during certain steps of the overall pipeline (in contrast to the filter weight values, which are updated throughout all training steps)
