@@ -1,6 +1,6 @@
 # B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning
 
-Bayesian optimised pruning of the lightweight face detector **EResFD**, currently the face detector with the lowest number of parameters in the literature.
+Bayesian optimised pruning of the lightweight face detector **EResFD**, the currently smallest (in number of parameters) well-performing face detector ofthe literature; and **EXTD**.
 
 Our methodology divides the network into 6 layer groups optimizes the pruning pruning rate of each group using **Bayesian optimization**. Subsequently, the optimal pruning rate are used in combination with the **Soft Filter Pruning (SFP)** approach and **FPGM pruning**.
 
@@ -12,7 +12,8 @@ Overview of our proposed pruning and training pipeline. The diagram on the left 
 The repository is organized into 3 folders:
 
 - `EResFD-main/`: Contains code and resources for the pre-training and pruning of the EResFD model.
-- `Pruned_Models/`: A collection of pruned models (`.pth` files). The pruned models with target pruning rates equal to 10%, 20%, 30%, 40%, 50% and 60% are included, in addition to the original pre-trained and unpruned EResFD model.
+- `EXTD_Pytorch-master`: Contains code and resources for the pre-training and pruning of the EXTD model.
+- `Pruned_Models/`: A collection of pruned models (`.pth` files). The pruned models with target pruning rates equal to 10%, 20%, 30%, 40%, 50% and 60% are included, in addition to the original pre-trained and unpruned EResFD and EXTD models.
 - `torchscript/`: All the required files for android deployment of the EResFD model (and its pruned versions) using the torchscript framework.
 
 ## Installation
@@ -56,10 +57,10 @@ The evaluation on the WIDER FACE validation set can be performed by using the sc
 
 
 # Pruned models
-In the `Pruned_Models/` folder, we provide pruned models with target pruning rates of 10%, 20%, 30%, 40%, 50%, and 60%, along with the original pre-trained and unpruned EResFD model. In the following table, for each model,  we present the pruning rates for each group:
+In the `Pruned_Models/` folder, we provide pruned models with target pruning rates of 10%, 20%, 30%, 40%, 50%, and 60%, along with the original pre-trained and unpruned EResFD and EXTD models. In the following tables, for each model,  we present the pruning rates for each group:
 
 
-| Model          | Group 1 Pruning Rate  | Group 2 Pruning Rate  | Group 3 Pruning Rate  | Group 4 Pruning Rate | Group 5 Pruning Rate  | Group 6 Pruning Rate | Sparsity  |
+| EResFD Model          | Group 1 Pruning Rate  | Group 2 Pruning Rate  | Group 3 Pruning Rate  | Group 4 Pruning Rate | Group 5 Pruning Rate  | Group 6 Pruning Rate | Sparsity  |
 |----------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------|
 | Original       | 0%                       | 0%                       | 0%                       | 0%                       | 0%                       | 0%                       | 0            |
 | Pruned 10%     | 20%                      | 0%                       | 7.9%                     | 20%                      | 20%                      | 17.2%                    | 11.94%        |
@@ -70,11 +71,15 @@ In the `Pruned_Models/` folder, we provide pruned models with target pruning rat
 | Pruned 60%     | 8.2%                     | 0%                       | 80%                      | 80%                      | 80%                      | 16.4%                    | 59.32%        |
 
 
+| EXTD Model          | Group 1 Pruning Rate  | Group 2 Pruning Rate  | Group 3 Pruning Rate  | Group 4 Pruning Rate | Group 5 Pruning Rate  | Group 6 Pruning Rate | Sparsity  |
+|----------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------|
+| Original       | 0%                       | 0%                       | 0%                       | 0%                       | 0%                       | 0%                       | 0           |
+| Pruned 20%     | 31.1%| 15.7%| 32.4%| 21.6%| 31.1%| 9.8%| 20.3%        |
 
 
 ## Android Deployment
 
-To deploy the pruned models on Android:
+To deploy the pruned EResFD models on Android:
 1. Use `convert_to_torchscript.py` to convert the desired model to TorchScript format.
 2. Move the generated `lite_scripted_model.ptl` file to the assets folder of your Android application.
 3. Load the model in your app using the provided `EResFD.java` class for inference.
