@@ -1,6 +1,6 @@
 # B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning
 
-Bayesian optimised pruning of the lightweight face detector **EResFD**, the currently smallest (in number of parameters) well-performing face detector ofthe literature; and **EXTD**.
+Bayesian optimised pruning of the lightweight face detector **EResFD**, the currently smallest (in number of parameters) well-performing face detector of the literature; and **EXTD**.
 
 Our methodology divides the network into 6 layer groups optimizes the pruning pruning rate of each group using **Bayesian optimization**. Subsequently, the optimal pruning rate are used in combination with the **Soft Filter Pruning (SFP)** approach and **FPGM pruning**.
 
@@ -9,7 +9,7 @@ Overview of our proposed pruning and training pipeline. The diagram on the left 
 
 ## Project Structure
 
-The repository is organized into 3 folders:
+The repository is organized into 4 folders:
 
 - `EResFD-main/`: Contains code and resources for the pre-training and pruning of the EResFD model.
 - `EXTD_Pytorch-master`: Contains code and resources for the pre-training and pruning of the EXTD model.
@@ -86,7 +86,11 @@ To deploy the pruned EResFD models on Android:
 A sample `build.gradle.kts` file is included with the necessary dependencies for building the Android app.
 
 ## License
-This code is provided for academic, non-commercial use only. Any redistribution must retain the original copyright notice, conditions, and disclaimers. The software is provided "as is" without any warranties, and the authors are not liable for damages arising from its use.
+This code is provided for academic, non-commercial use only. Please also check for any restrictions applied in the code parts and datasets used here from other sources. For the materials not covered by any such restrictions, redistribution and use in source and binary forms, with or without modification, are permitted for academic non-commercial use provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation provided with the distribution.
+
+This software is provided by the authors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the authors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
 
 ## Citation
 If you find our pruning method or pruned models useful in your work, please cite the following publication where this approach was proposed:
@@ -103,3 +107,6 @@ Pruning", under review.
   year = {2024}
 }
 ```
+
+## Acknowledgement
+This work was supported by the EU Horizon Europe and Horizon 2020 programmes under grant agreements 101070093 vera.ai and 951911 AI4Media, respectively.
