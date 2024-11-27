@@ -13,7 +13,7 @@ The repository is organized into 4 folders:
 
 - `EResFD-main/`: Contains code and resources for the pre-training and pruning of the EResFD model.
 - `EXTD_Pytorch-master`: Contains code and resources for the pre-training and pruning of the EXTD model.
-- `Pruned_Models/`: A collection of pruned models (`.pth` files). The pruned models with target pruning rates equal to 10%, 20%, 30%, 40%, 50% and 60% are included, in addition to the original pre-trained and unpruned EResFD and EXTD models.
+- `Pruned_Models/`: A collection of pruned models (`.pth` files). Pruned models with target pruning rates equal to 10%, 20%, 30%, 40%, 50% and 60% are included, in addition to the original pre-trained and unpruned EResFD and EXTD models.
 - `torchscript/`: All the required files for android deployment of the EResFD model (and its pruned versions) using the torchscript framework.
 
 ## Installation
