@@ -57,7 +57,7 @@ The evaluation on the WIDER FACE validation set can be performed by using the sc
 
 
 # Pruned models
-In the `Pruned_Models/` folder, we provide pruned models with target pruning rates of 10%, 20%, 30%, 40%, 50%, and 60%, along with the original pre-trained and unpruned EResFD and EXTD models. In the following tables, for each model,  we present the pruning rates for each group:
+In the `Pruned_Models/` folder, we provide pruned models with target pruning rates of 10%, 20%, 30%, 40%, 50% and 60% for EResFD, and 20% for EXTD, along with the original pre-trained and unpruned EResFD and EXTD models. In the following tables, for each model,  we present the pruning rates for each group:
 
 
 | EResFD Model          | Group 1 Pruning Rate  | Group 2 Pruning Rate  | Group 3 Pruning Rate  | Group 4 Pruning Rate | Group 5 Pruning Rate  | Group 6 Pruning Rate | Sparsity  |
