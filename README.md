@@ -1,5 +1,22 @@
 # B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning
+## PyTorch Implementation [[Paper](https://TBA)] [[DOI](https://TBA)] [[Cite](#citation)]
+- From **"B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning"**, 2025 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)
+- Written by Nikolaos Kaparinos and Vasileios Mezaris
+- This repository provides software for training from scratch, pruning and evaluating the EResFD and EXTD face detection models. The models are trained and evaluated using the WIDER FACE training and three validation ses respectively. While experiments were conducted with target prunes rates raging from 10% to 60%, the user can define their own custom target pruning rate.
 
+## Dependences
+The code was developed, checked and verified on an `Ubuntu 20.04.06 LTS` PC with an `NVIDIA RTX 3090` GPU and an `i5-12600K` CPU. Python `3.11.9` was used. The python dependencies can be installed with the command:
+
+```bash
+pip install -r requirements.txt
+```
+
+
+## Data
+ Download and extract the WIDER FACE dataset from [here](https://shuoyang1213.me/WIDERFACE/). Place the `WIDER` folder in the same directory as the project folders.
+ 
+
+## Overview
 Bayesian optimised pruning of the lightweight face detector **EResFD**, the currently smallest (in number of parameters) well-performing face detector of the literature; and **EXTD**.
 
 Our methodology divides the network into 6 layer groups optimizes the pruning pruning rate of each group using **Bayesian optimization**. Subsequently, the optimal pruning rate are used in combination with the **Soft Filter Pruning (SFP)** approach and **FPGM pruning**.
@@ -15,18 +32,6 @@ The repository is organized into 4 folders:
 - `EXTD_Pytorch-master`: Contains code and resources for the pre-training and pruning of the EXTD model.
 - `Pruned_Models/`: A collection of pruned models (`.pth` files). Pruned models with target pruning rates equal to 10%, 20%, 30%, 40%, 50% and 60% are included, in addition to the original pre-trained and unpruned EResFD and EXTD models.
 - `torchscript/`: All the required files for android deployment of the EResFD model (and its pruned versions) using the torchscript framework.
-
-## Installation
-
-Before running the pruning scripts, make sure you have the required dataset and dependencies.
-
-1. **Dataset:** Download and extract the WIDER FACE dataset from [here](https://shuoyang1213.me/WIDERFACE/). Place the `WIDER` folder in the same directory as the project folders.
-   
-2. **Dependencies:** Python 3.11.9, CUDA 11.4, and Ubuntu 20.04.06 LTS were used in development. Install the required Python dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
 
 
 ## Training and Pruning
