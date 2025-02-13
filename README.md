@@ -1,5 +1,5 @@
 # B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning
-## PyTorch Implementation [[Paper](https://TBA)] [[DOI](https://TBA)] [[Cite](#citation)]
+## PyTorch Implementation [[Paper](http://arxiv.org/abs/2501.16917)] [[DOI](https://TBA)] [[Cite](#citation)]
 - From **"B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning"**, 2025 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW).
 - Written by Nikolaos Kaparinos and Vasileios Mezaris.
 - This repository provides software for training from scratch, pruning and evaluating the EResFD and EXTD face detection models. The models are trained and evaluated using the WIDER FACE training and validation sets respectively. While experiments were conducted with target prunes rates ranging from 10% to 60%, the user can define their own custom target pruning rate. Additionally, this repository includes code for converting pruned EResFD models to TorchScript format, which is suitable for mobile deployment.
