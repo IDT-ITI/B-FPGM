@@ -2,7 +2,7 @@
 ## PyTorch Implementation [[Paper](https://TBA)] [[DOI](https://TBA)] [[Cite](#citation)]
 - From **"B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning"**, 2025 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)
 - Written by Nikolaos Kaparinos and Vasileios Mezaris
-- This repository provides software for training from scratch, pruning and evaluating the EResFD and EXTD face detection models. The models are trained and evaluated using the WIDER FACE training and three validation ses respectively. While experiments were conducted with target prunes rates raging from 10% to 60%, the user can define their own custom target pruning rate.
+- This repository provides software for training from scratch, pruning and evaluating the EResFD and EXTD face detection models. The models are trained and evaluated using the WIDER FACE training and three validation sets respectively. While experiments were conducted with target prunes rates raging from 10% to 60%, the user can define their own custom target pruning rate.
 
 ## Dependences
 The code was developed, checked and verified on an `Ubuntu 20.04.06 LTS` PC with an `NVIDIA RTX 3090` GPU and an `i5-12600K` CPU. Python `3.11.9` was used. The python dependencies can be installed with the command:
