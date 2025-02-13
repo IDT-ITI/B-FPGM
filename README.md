@@ -5,7 +5,7 @@
 - This repository provides software for training from scratch, pruning and evaluating the EResFD and EXTD face detection models. The models are trained and evaluated using the WIDER FACE training and validation sets respectively. While experiments were conducted with target prunes rates ranging from 10% to 60%, the user can define their own custom target pruning rate. Additionally, this repository includes code for converting pruned EResFD models to TorchScript format, which is suitable for mobile deployment.
 
 ## Dependences
-The code was developed, checked and verified on an `Ubuntu 20.04.06 LTS` PC with an `NVIDIA RTX 3090` GPU and an `i5-12600K` CPU. Python `3.11.9` was used and the required python dependencies can be installed with the command:
+The code was developed, checked and verified on an `Ubuntu 20.04.06 LTS` PC with an `NVIDIA RTX 3090` GPU and an `i5-12600K` CPU. Python `3.11.9` was used and the required python dependencies can be installed with the following command:
 
 ```bash
 pip install -r requirements.txt
