@@ -94,17 +94,17 @@ This software is provided by the authors "as is" and any express or implied warr
 
 ## Citation
 If you find our pruning method or pruned models useful in your work, please cite the following publication where this approach was proposed:
-This work was submitted and is under review:
 
-N. Kaparinos, V. Mezaris, "B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM
-Pruning", under review.
+N. Kaparinos, V. Mezaris, "B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning", Proc. IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW 2025), Tucson, AZ, USA, Feb. 2025. 
+
+A pre-print of this paper is available at:  http://arxiv.org/abs/2501.16917
 
 ```bibtex
-@article{Kaparinos2024,
-  title = {B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning},
-  author = {N. Kaparinos and V. Mezaris},
-  journal = {Under Review},
-  year = {2024}
+@INPROCEEDINGS{Kaparinos2025,
+  author={Kaparinos, Nikolaos and Mezaris, Vasileios},
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)}, 
+  title={B-FPGM: Lightweight Face Detection via Bayesian-Optimized Soft FPGM Pruning}, 
+  year={2025}
 }
 ```
 
